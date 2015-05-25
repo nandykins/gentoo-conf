@@ -37,6 +37,9 @@ function adjust_speed(event)
     if scale then
         mp.set_property("speed", scale)
         print("Setting speed to", scale)
+        fps=clip_fps*scale
+        mp.set_property("fps", fps)
+        print("Setting fps to", fps)
     end
 end
 
